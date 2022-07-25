@@ -56,7 +56,26 @@ export default function CssTransition() {
                 opacity: 0;
                 transition: opacity 200ms;
               }
-              
+            `}
+            </pre>
+          </code>
+        </article>
+
+        <article className={styles.article}>
+        <h4>@NOTES</h4>
+          <p>
+            Include <code>unmountOnExit</code> is a must. The test made showed that
+            the component won't work as expected without it. Suggested implementation
+            is as follows:
+          </p>
+          <code className={styles.code}>
+            <pre>
+              {`
+            <CSSTransition ...
+                unmountOnExit
+            >
+                ...
+            </CSSTransition>
             `}
             </pre>
           </code>
