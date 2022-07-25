@@ -36,6 +36,7 @@ export default function Transition() {
             transitions{" "}
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://reactcommunity.org/react-transition-group/transition"
             >
               see about here.
