@@ -31,7 +31,7 @@ export default function Home() {
 
           <p>
             <small>
-              <i>About React implementation see <Link href="/">React Transition Group into React</Link> (soon)</i>
+              <i>About React implementation see <Link href="https://react-transition-group.vercel.app/">React Transition Group into React</Link> (soon)</i>
             </small>
           </p>
 
