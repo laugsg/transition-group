@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 // components
 import { Navigation } from "../components/Navigation";
 import { CssTransitionComponent } from "../components/CssTransitionComponent";
+import { CssTransitionComponentAppear } from "../components/CssTransitionComponentAppear";
 
 export default function CssTransition() {
   return (
@@ -26,6 +27,7 @@ export default function CssTransition() {
           <code>*-state</code> in order to activate the CSS transition. Matching
           this class names gives total control on the transition behaviour.
           <CssTransitionComponent />
+          <CssTransitionComponentAppear/>
         </p>
 
         <article className={styles.article}>

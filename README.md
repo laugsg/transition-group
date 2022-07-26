@@ -4,3 +4,4 @@ It is not an animation library: Exposes simple components which makes visual tra
 
 This project is live documented at [transition-group.vercel.app/](https://transition-group.vercel.app/)
 
+* [package react-transition-group](https://github.com/reactjs/react-transition-group)
