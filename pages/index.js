@@ -72,6 +72,13 @@ export default function Home() {
           {/* Cons */}
           <article className={styles.article}>
             <h3>Cons</h3>
+
+            <p>
+              Currently, the library is meant for React and CRA environment
+              which means It shows differences and limitations details from
+              documentation to flat Nextjs on implementation.
+            </p>
+            
             <p>
               The use cases are generalized on the same cases across the
               community. It's difficult to find examples which differs from most
@@ -79,11 +86,6 @@ export default function Home() {
             </p>
 
             <h4>Local vs. Global Styles</h4>
-            <p>
-              Currently, the library is meant for React and CRA environment
-              which means It shows differences and limitations details from
-              documentation to flat Nextjs on implementation.
-            </p>
             <p>
               At glance, as React library doesn't perfectly fit into Nextjs,
               components as CSSTransition can load their own styles files in
