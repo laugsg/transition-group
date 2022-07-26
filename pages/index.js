@@ -24,14 +24,26 @@ export default function Home() {
         <p className={styles.description}>
           An investigation about Transition Group library to be used in DS.
         </p>
-      </main>
 
-      <footer className={styles.footer}>
-        <span className={styles.logo}>
-          Powered by{" "}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
-      </footer>
+      <section>
+        <h2>Few differences</h2>
+        <p>
+          Currently, the library is meant for React and CRA environment 
+          which means It shows deferences about implementation details 
+          from documentation to flat Nextjs.
+        </p>
+
+        <p>
+          <small>
+            <i>
+              An adaptation from this library to be implemented with vanilla-extact 
+              would be valuable to undercover the details of combine both 
+              (Nextjs & Transition Gruoup) and conclude about limitations, advantages, constrains and How-To.
+            </i>
+          </small>
+        </p>
+      </section>
+      </main>
     </div>
   );
 }
