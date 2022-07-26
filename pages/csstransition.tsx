@@ -62,7 +62,9 @@ export default function CssTransition() {
         </article>
 
         <article className={styles.article}>
-        <h4>@NOTES</h4>
+        <h3>@NOTES</h3>
+
+        <h3>unmountOnExit</h3>
           <p>
             Include <code>unmountOnExit</code> is a must. The test made showed that
             the component won't work as expected without it. Suggested implementation
@@ -79,6 +81,20 @@ export default function CssTransition() {
             `}
             </pre>
           </code>
+
+        <h3>Styles</h3>
+        <p>
+          Meanwhile the CSSTransition component provides full control over the css classes & rules 
+          than Transition component, the classes for this example should be declared as globals.
+        </p>
+        <h5>Consideration about globally declared css clasess</h5>
+        <p>
+          Some considerations should be had in mind, this isn't mean that the library couldn't be 
+          combined with an atomic framework. What this shows, at glance, It's as React library 
+          needs to be adapted to perfectly fit into Nextjs, maybe helped by other library as 
+          vanilla-extract or any other extra step, which could be deeply investigated 
+          in a further research.
+        </p>
         </article>
       </main>
     </div>

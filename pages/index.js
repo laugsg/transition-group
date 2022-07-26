@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 // components
-import { Navigation } from '../components/Navigation'
+import { Navigation } from "../components/Navigation";
 
 export default function Home() {
   return (
@@ -25,24 +25,78 @@ export default function Home() {
           An investigation about Transition Group library to be used in DS.
         </p>
 
-      <section>
-        <h2>Few differences</h2>
-        <p>
-          Currently, the library is meant for React and CRA environment 
-          which means It shows deferences about implementation details 
-          from documentation to flat Nextjs.
-        </p>
+        {/* Conclusion */}
+        <section>
+          <h2>Conclusion</h2>
 
-        <p>
-          <small>
-            <i>
-              An adaptation from this library to be implemented with vanilla-extact 
-              would be valuable to undercover the details of combine both 
-              (Nextjs & Transition Gruoup) and conclude about limitations, advantages, constrains and How-To.
-            </i>
-          </small>
-        </p>
-      </section>
+          <p>
+            It provides Container Components to connect css rules with
+            components, manipulating the DOM along the repaint.
+          </p>
+
+          <p>
+            Then, the first and most important to know is React Transition Group
+            is not an animation library.
+          </p>
+          <p>
+            Instead, it's compounded of certain components requiring a specific
+            combination of structure and css files/rules declaration.
+          </p>
+
+          <p>
+            For How-To documentation for each component navigate to its pages in
+            this site.
+          </p>
+
+          {/* Pros */}
+          <article className={styles.article}>
+            <h3>Pros</h3>
+            <p>
+              <code>react-transition-group</code> is well documented library
+              which exposes states at the mounting and unmounting steps of React
+              Components and provide an interface to apply styles rules on them.
+              It's simple to use and straight foward.
+            </p>
+            <p>
+              Currently, the community around the project is well-sized:
+              (github/npm)
+            </p>
+            <ul>
+              <li>77 Contributors</li>
+              <li>Used by 1.4m</li>
+              <li>Latest release v4.4.2 - 29 May 2021</li>
+              <li>9m weekly downloads</li>
+            </ul>
+          </article>
+
+          {/* Cons */}
+          <article className={styles.article}>
+            <h3>Cons</h3>
+            <p>
+              The use cases are generalized on the same cases across the
+              community. It's difficult to find examples which differs from most
+              simple and basics.
+            </p>
+
+            <h4>Local vs. Global Styles</h4>
+            <p>
+              Currently, the library is meant for React and CRA environment
+              which means It shows differences and limitations details from
+              documentation to flat Nextjs on implementation.
+            </p>
+            <p>
+              At glance, as React library doesn't perfectly fit into Nextjs,
+              components as CSSTransition can load their own styles files in
+              React environment but It doesn't in Nextjs which should load them
+              from global.
+            </p>
+            <p>
+              This isn't mean that the library couldn't be combined with an
+              atomic framework. At glance, needs to be adapted maybe helped by
+              other library as vanilla-extract or any other extra step.
+            </p>
+          </article>
+        </section>
       </main>
     </div>
   );
